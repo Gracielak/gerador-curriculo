@@ -1,0 +1,81 @@
+/* Estilo geral */
+body {
+    background-color: #f8f9fa; 
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+}
+
+/* Título */
+h1 {
+    color: #343a40; /* Cinza escuro */
+    font-weight: bold;
+    margin-bottom: 30px;
+}
+
+/* Formulário */
+form {
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+
+/* Labels */
+label {
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="date"] {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+}
+
+/* Botões principais */
+button {
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Botão de adicionar */
+.btn-primary {
+    background-color: #a9b7ce71;
+    border-color: #a9b7ce71;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #a9b7ce71;
+}
+
+/* Botão de submit */
+.btn-success {
+    background-color: #198754;
+    border-color: #198754;
+    width: 100%;
+    margin-top: 20px;
+    transition: 0.3s;
+}
+
+.btn-success:hover {
+    background-color: #157347;
+}
+
+/* Margens para inputs dinâmicos */
+#experiencias input,
+#formacoes input,
+#habilidades input {
+    margin-bottom: 10px;
+}
+
+/* Remover botões na impressão */
+@media print {
+    button, a {
+        display: none !important;
+    }
+}
