@@ -28,7 +28,7 @@
 <body class="container mt-5">
     <h1 class="mb-4">Currículo de <?php echo htmlspecialchars($nome); ?></h1>
 
-    <p><strong>Data de Nascimento:</strong> <?php echo htmlspecialchars($data_nascimento); ?></p>
+    <p><strong>Data de Nascimento:</strong> <?php echo htmlspecialchars(date('d/m/Y', strtotime($data_nascimento))); ?></p>
     <p><strong>Idade:</strong> <?php echo htmlspecialchars($idade); ?> anos</p>
     <p><strong>Email:</strong> <?php echo htmlspecialchars($email); ?></p>
     <p><strong>Telefone:</strong> <?php echo htmlspecialchars($telefone); ?></p>

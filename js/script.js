@@ -1,8 +1,5 @@
 $(document).ready(function(){
-    // Adiciona campos de experiências dinamicamente
-    $("#addExperiencia").click(function(){
-        $("#experiencias").append('<input type="text" name="experiencias[]" placeholder="Descreva sua experiência"><br><br>');
-    });
+
 
     // Calcula a idade automaticamente
     $("#data_nascimento").on("change", function(){

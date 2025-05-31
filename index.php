@@ -14,22 +14,22 @@
         <form action="gerar_curriculo.php" method="post" class="needs-validation" novalidate>
             <div class="mb-3">
                 <label for="nome" class="form-label">Nome:</label>
-                <input type="text" name="nome" id="nome" class="form-control" required>
+                <input type="text" name="nome" id="nome" class="form-control" placeholder="Digite seu nome" required>
             </div>
 
             <div class="mb-3">
                 <label for="endereco" class="form-label">Endereço:</label>
-                <input type="text" name="endereco" id="endereco" class="form-control" required>
+                <input type="text" name="endereco" id="endereco" class="form-control" placeholder="Digite seu endereço" required>
             </div>
 
             <div class="mb-3">
                 <label for="telefone" class="form-label">Telefone:</label>
-                <input type="text" name="telefone" id="telefone" class="form-control" required>
+                <input type="text" name="telefone" id="telefone" class="form-control" placeholder="Digite seu telefone" required>
             </div>
 
             <div class="mb-3">
                 <label for="email" class="form-label">Email:</label>
-                <input type="email" name="email" id="email" class="form-control" required>
+                <input type="email" name="email" id="email" class="form-control" placeholder="Digite seu email" required>
             </div>
 
             <div class="mb-3 row">
@@ -54,7 +54,7 @@
             <div class="mb-3">
                 <label class="form-label">Formação Acadêmica:</label>
                 <div id="formacoes">
-                    <input type="text" name="formacoes[]" class="form-control mb-2" placeholder="Informe sua formação">
+                    <input type="text" name="formacoes[]" class="form-control mb-2" placeholder="Descreva sua formação">
                 </div>
                 <button type="button" id="addFormacao" class="btn btn-sm btn-primary">+</button>
             </div>
@@ -62,7 +62,7 @@
             <div class="mb-3">
                 <label class="form-label">Habilidades:</label>
                 <div id="habilidades">
-                    <input type="text" name="habilidades[]" class="form-control mb-2" placeholder="Informe uma habilidade">
+                    <input type="text" name="habilidades[]" class="form-control mb-2" placeholder="Descreva sua habilidade">
                 </div>
                 <button type="button" id="addHabilidade" class="btn btn-sm btn-primary">+</button>
             </div>
@@ -96,11 +96,11 @@
         });
 
         $('#addFormacao').click(function() {
-            $('#formacoes').append('<input type="text" name="formacoes[]" class="form-control mb-2" placeholder="Informe sua formação">');
+            $('#formacoes').append('<input type="text" name="formacoes[]" class="form-control mb-2" placeholder="Descreva sua formação">');
         });
 
         $('#addHabilidade').click(function() {
-            $('#habilidades').append('<input type="text" name="habilidades[]" class="form-control mb-2" placeholder="Informe uma habilidade">');
+            $('#habilidades').append('<input type="text" name="habilidades[]" class="form-control mb-2" placeholder="Descreva sua habilidade">');
         });
 
         // Cálculo de idade
